@@ -71,3 +71,151 @@
 #     print("B등급")
 # elif grade >= 0 and grade <= 60:
 #     print("C등급")
+
+# # excercise 7
+# # 사용자로 부터 주민등록 번호를 입력받아 출생 연도를 출력
+# # 앞 2자리만.
+
+# years = input('주민등록 번호 입력')
+# print('출생년도:',years[0:2],'년생')
+
+# # exercise 8
+
+# # 사용자로부터 주민등록번호를 입력 받아 뒷자리 맨 앞의 숫자를 출력하세요
+# # 성별을 의미하는 번호 
+
+# years2 = input('주민등록 번호를 입력하세요.')
+# print(years2[-7])
+
+# exercise 9
+
+# 사용자로 부터 주민등록번호를 입력 받아, 성별을 표기 (남성, 여성)
+# 성별을 구분하는 숫자는 1남성 2여성 으로만 구분
+
+# years3 = input("주민번호를 입력하세요")
+# # 혹은 years3[-7] =='1': 이렇게 가능
+# gender = years3[-7] # 배열은 문자열로 출력됨, 정수가 아님
+# if gender == '1': 
+#     print("남성입니다.")
+# elif gender =='2':
+#     print("여성입니다.")
+# else:
+#     print("성별을 숫자 1,2로 입력해주세요")
+
+# # exercise 10
+# # 문자열에서 ... 제거하라
+# # mystr = "a man goes into the room..."
+
+# mystr = "a man goes in to the room..."
+# print(mystr.strip('.'))
+
+# # 변수.strip('')
+# # 해당 값을 제거 함
+
+# # exercise 11
+
+# # 공백과 줄바꿈을 제거하여 코드만 추출
+
+# # code = '        000660\n      '
+
+# code ='     000660#     '
+# print(code.strip())
+# # strip은 왼쪽 오른쪽 string 문자열을 제거함. 가운데 제거 불가, \
+# #  양옆 제거한후 가운데는 제거가능 
+
+# # exercise 12
+
+# # Python 문자 빈도수 출력
+
+# # "Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation.
+# # Python is dynamically typed and garbage-collected. It supports multiple programming paradigms, including structured (particularly procedural),
+# # object-oriented and functional programming. It is often described as a batteries included language due to its comprehensive standard library."
+
+# words = "Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation.Python is dynamically typed and garbage-collected. It supports multiple programming paradigms, including structured (particularly procedural), object-oriented and functional programming. It is often described as a batteries included language due to its comprehensive standard library."
+
+# print(words.count('Python'))
+# # 주의, 대소문자 구분함 
+
+# # exercise 13
+
+# # letters 변수에 들어있는 두번째와 네번째 문자를 출력하라(인덱스 아님)
+
+# letters = "python"
+# print(letters[1], letters[3])
+
+# # exercise 14
+# # letters 변수에 사용자로 부터 문자열 입력을 받아 문자 n 이 있는지 출력 ( n 이 있으면 0, 없으면 -1 출력)
+
+# letters = input('단어 입력')
+
+# if letters.find('n') == -1:
+#     print(-1)
+# else:
+#     print(0)
+
+# # exercise 15
+# # letters1 변수에 사용자로 부터 문자열 입력을 받아 문자 n 이 있는지 출력 ( n 이 있으면 n이 들어있습니다, 없으면 n이 안들어 있습니다 출력)
+
+# letters1 = input('영단어를 입력해주세요: ')
+# if letters1.find('n') >= 0:
+#     print('n이 들어있습니다.')
+# else:
+#     print('n이 들어있지 않습니다.')
+
+# ★ exercise 16
+
+# 주민등록번호 뒷자리 중 2~3번째는 출생코드.
+# 주민등록 번호를 입력 받은 후 출생지를 출력
+#  00~08 : 서울
+#  09~12 : 부산
+
+# birth_city = input("주민번호를 입력해주세요: ")
+# birth = birth_city[-6:-4]
+# print(type(birth),birth)
+
+# if birth >= "00" and birth <= "08":
+#     print("서울 출생")
+# elif birth >= "09" and birth <= "12":
+#     print("부산 출생")
+# else:
+#     print("오류 다시")
+    
+# # 인풋에 인트로 변경하니 문자열에서 찾지를 못함. 오류 뜸
+# # 문자열에서 0을 빼니 전부 서울출신되어버림.
+# # 문자열 방법
+
+
+# birth_city1 = input("주민번호를 입력해주세요: ")
+# birth1 = int(birth_city1[-6:-4])
+# print(type(birth1),birth1)
+
+# if birth1 >= 0 and birth1 <= 8:
+#     print("서울 출생")
+# elif birth1 >= 9 and birth1 <= 12:
+#     print("부산 출생")
+# else:
+#     print("오류 다시")
+# # 인풋에 인트로 변경하니 문자열에서 찾지를 못함.오류 뜸
+# # 숫자 앞에 0을 빼줘야함 , 정수int
+# # 정수 방법
+
+# # exercise 17
+# # names 변수 안에 dave, david, andy가 있다, 해당 변수값을 ',' 기준으로 분리하여 출력
+
+# names = "Dave, David, Andy"
+# print(names.split(','))
+
+# # exercise 18
+# # 확장자를 제거한 파일 이름만 출력
+
+# filename = 'exercise01.docx'
+# filelist = filename.split('.')
+# # #split 메소는 문자열을 리스트로 바꿈
+# print(filelist[0])
+
+# filename = ['exercise01.docx']
+# filename.append('.docx')
+# filename.remove('.docx')
+# print(filename)
+
+# # # 보다시피 위에 식은 성립이 안됨, '.' 기점으로 split 메소드를 사용하여 나눠야함.
