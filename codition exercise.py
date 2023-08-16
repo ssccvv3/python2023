@@ -6,10 +6,10 @@
 #     print("레스토랑에 가자")
 # else:
 #     print("방콕이나 하자ㅠ")
-age = int(input("몇살 입니까?"))
-if age >= 19:
-    print("당신은 성인입니다.")
-elif age >= 10 and age < 19:
-    print("당신은 청소년 입니다.")
-else:
-    print("당신은 아동입니다.")
+# age = int(input("몇살 입니까?"))
+# if age >= 19:
+#     print("당신은 성인입니다.")
+# elif age >= 10 and age < 19:
+#     print("당신은 청소년 입니다.")
+# else:
+#     print("당신은 아동입니다.")
