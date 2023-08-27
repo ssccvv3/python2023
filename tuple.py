@@ -6,7 +6,7 @@ turple = (1,2,3,4)
 
 tuple은 삭제나 추가가 불가
 del tuple[1]
-tuple1[1] = "c"
+tuple1[1] = "c" #추가 불가
 
 tuple끼리 더하거나 반복은 가능
 tuple2 = (5, 6)

@@ -1,9 +1,6 @@
-### Exercise 53. 데이터 구조 (튜플과 리스트)
-* 다음 튜플 데이터를 리스트 데이터로 변환한 후에 'fun-coding4' 데이터를 마지막에 추가하고, 다시 튜플 데이터로 변환하세요.
-```python
-tupledata = ('fun-coding1', 'fun-coding2', 'fun-coding3')
+#  Exercise 51. 데이터 구조 (튜플)
+# * 다음 코드를 읽고, 최종적으로 var1과 var2의 값이 어떤 값이될지 확인해보고, 왜 이렇게 동작하는지 튜플을 기반으로 설명하세요.
+#   - 실행코드
 
-tupledata = ('fun-coding1', 'fun-coding2', 'fun-coding3')
-data = list(tupledata)
-data.append('fun-coding4')
-tuple(data)
+#     var1, var2 = 1, 2
+#     var1, var2 = var2, var1
