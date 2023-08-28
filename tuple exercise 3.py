@@ -5,4 +5,8 @@
 #     var1, var2 = 1, 2
 #     var1, var2 = var2, var1
 
-dddddd  test2
+튜플이며 , var1=1, var2=2
+아래 해당값은 교환하게 된다.
+
+var1, var2 = 2, 1
+즉, var1 = 2, var2 = 1 
