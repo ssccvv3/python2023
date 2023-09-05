@@ -9,5 +9,10 @@
 # ['환경', '회사', '정부, 정치', '얼굴']
 
 data = {'environment': '환경', 'company': '회사', 'government': '정부, 정치', 'face': '얼굴'}
-print(data.keys())
-print(data.values())
+keyss = data.keys()
+valuess = data.values()
+
+print(list(keyss))
+print(list(valuess))
+
+#리스트로 출력을 하지 않으면 독특한 타입의 리스트, 딕셔너리에서 파생됨.
