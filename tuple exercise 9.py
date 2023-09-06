@@ -27,8 +27,7 @@
 data = {"environment": ["환경","X"], "company":["회사","O"], "goverment":["정치,정부","X"], "face":["얼굴","X"]}
 for keys in data.keys():
     item = data[keys]
-    print(type(item[0]))
-    # if item[1] == "X":
-    #     print(keys)
+    if item[1] == "X":
+        print(keys)
 # 정확하게 x 값만 찾아서 출력할 수 있다., value 값에 또 다른 list 형태로 만들어 인덱스 문자열을 통해서 출력을 한다.
 # list에서 인덱스 찾는것을 타입으로 확인하면 str 문자열로 나온다! 그렇기에 해당 x 값을 정확하게 찾을 수 있다.
