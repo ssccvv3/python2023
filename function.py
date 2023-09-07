@@ -7,7 +7,7 @@
 #    실행문2(parameter1)
 #    function("임의1", "임의2")
 #    return output                    # 위 변수를 2개면 실행문에서도 기입해주어야하며
-                                      # 아래 function 값을 통해 위 실행문이 실행됨
+#                                     # 아래 function 값을 통해 위 실행문이 실행됨
 
 # 인풋(input),  인자(argument,parameter)
 
@@ -22,7 +22,7 @@ def func2(data1, data2):
 y = func2(1, 2)
 print(y)
 
-def awe_sum(a,b):          # 
+def awe_sum(a,b):          
     result = a + b
     return result
 a=2
@@ -47,7 +47,7 @@ def func_wo_return(a):
 func_wo_return(1)  # 1이 인자 a의 값으로 결국 아래의 a= 1 허나 str 문자열로 변환해서 출력이 된다, str이 없으면
                    # 숫자로 인지하여 오류가 뜨며 출력이 안된다.   
                    
-def mul_return(a):
+def mul_return(a): 
     b = a + 1
     return a,b
 print(mul_return(1)) #return 값은 1,2 나옴,  @ 합수 안에서  return 다음 코드는 원래 실행을 안함.
